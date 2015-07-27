@@ -4,24 +4,28 @@
   <title>Website</title>
   <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/css/foundation.min.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
+
 </head>
 <body>
-  
+
   <nav class="top-bar">
     <ul class="title-area">
-      <li class="name">
+      <!-- <li class="name">
         <h1><a href="/">Website</a></h1>
-      </li>
+      </li> -->
     </ul>
 
     <section class="top-bar-section">
       <ul class="right">
-        <%- if current_user -%>
-          <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
-        <%- else -%>
-          <li><%= link_to 'Sign Up', new_user_registration_path %></li>
-          <li><%= link_to 'Sign In', new_user_session_path %></li>
-        <%- end -%>
+          <li><%= link_to 'Welcome' %></li>
+          <li><%= link_to 'LinkedIn'  %></li>
+          <li><%= link_to 'Github' %></li>
+          <li><%= link_to 'Writing'  %></li>
+          <li><%= link_to 'Hobbies' %></li>
+          <li><%= link_to 'Dogs' %></li>
       </ul>
     </section>
   </nav>

@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+
+  root 'homes#index'
+
+  resources :welcome, only: [:index]
+  resources :writing, only: [:index]
+  resources :hobbies, only: [:index]
+  resources :dogs, only: [:index]
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
