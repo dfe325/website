@@ -13,19 +13,19 @@
 
   <nav class="top-bar">
     <ul class="title-area">
-      <!-- <li class="name">
-        <h1><a href="/">Website</a></h1>
-      </li> -->
+      <li class="name">
+        <h1><a href="/">Dan Eder</a></h1>
+      </li>
     </ul>
 
     <section class="top-bar-section">
       <ul class="right">
-          <li><%= link_to 'Welcome' %></li>
-          <li><%= link_to 'LinkedIn'  %></li>
-          <li><%= link_to 'Github' %></li>
-          <li><%= link_to 'Writing'  %></li>
-          <li><%= link_to 'Hobbies' %></li>
-          <li><%= link_to 'Dogs' %></li>
+          <li><%= link_to 'Welcome', welcome_index_path %></li>
+          <li> <a href= "https://www.linkedin.com/in/daneder1" ><%= 'LinkedIn'  %> </a></li>
+          <li><a href= "https://github.com/dfe325"> <%= 'Github' %> </a> </li>
+          <li><%= link_to 'Writing', writing_index_path  %></li>
+          <li><%= link_to 'Hobbies', hobbies_path %></li>
+          <li><%= link_to 'Dogs', dogs_path %></li>
       </ul>
     </section>
   </nav>
