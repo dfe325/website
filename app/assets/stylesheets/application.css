@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+ div.container1 {
+   position: relative;
+ }
+
+ div.container1 p {
+   width: 600px;
+   height: 200px;
+   padding: 0px;
+
+   position: absolute;
+   top: 50%;
+   left: 50%;
+
+   margin: 70px 0 0 -170px;
+ }
