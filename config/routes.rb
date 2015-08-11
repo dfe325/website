@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'homes#index'
+  root 'welcome#index'
 
   resources :welcome, only: [:index]
   resources :writing, only: [:index]
