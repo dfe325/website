@@ -34,3 +34,12 @@
     opacity: 0.4;
     color: blue;
   }
+
+  h4, p {
+    color: white;
+    font-weight: bold;
+    font-size: 14;
+    font-family: courier new;
+    text-shadow: 0 1px 0 #ccc,
+                 0 2px 0 #c9c9c9;
+  }
